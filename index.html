@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Algoritmo 36</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Algoritmo 36</h1>
+	</header>
+	<main>
+		<h2>Pseudocódigo Visualg:</h2>
+		<pre>Var
+horas, thoras, mhoras: real
+semana: inteiro
+Inicio
+thoras &lt;- 0
+para semana de 1 ate 4 faca
+escreva("Digite a quantidade de horas estudadas na semana ", semana, ": ")
+leia(horas)
+thoras &lt;- thoras + horas
+fimpara
+escreval
+mhoras &lt;- thoras / 4
+escreva("Média de horas estudadas por semana: ", mhoras)
+escreval
+FimAlgoritmo</pre>
+<div>
+	<img src="algoritmovisualg.jpg" alt="Carregando Imagem..."width="900" height="500">
+</div>
+<h2>JavaScript:</h2>
+		<pre>const calcularBtn = document.getElementById('calcular');
+const mediaElement = document.getElementById('media');
+			
+calcularBtn.addEventListener('click', () => {
+let thoras = 0;
+for(let semana = 1; semana <= 4; semana++) {
+thoras += parseFloat(prompt(`Digite a quantidade de horas estudadas na semana ${semana}:`));
+}
+ mediaElement.textContent = `Média de horas estudadas por semana: ${(thoras / 4).toFixed(2)}`;
+			});</pre>
+		<div id="resultado">
+			<h2>Codigo em JavaScript:</h2>
+			<button id="calcular">Calcular média de horas estudadas</button>
+			<p id="media"></p>
+		</div>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
